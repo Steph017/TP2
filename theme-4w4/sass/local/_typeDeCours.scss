@@ -1,0 +1,32 @@
+/*---------------------------------------------------------------
+css pour les blocs de cours
+----------------------------------------------------------------- */
+.list-cours{
+    h2{
+       margin-left: 2%;
+       font-size: 2.5em;
+    }
+    .type-cours{
+        article{
+           .icone{
+               margin-top: 5em;
+           }
+           a.titre{
+               font-size: 1.2em;
+               padding-bottom: 5px;
+               transition: transform .2s;
+           }
+           a.titre:hover{
+               transform: scale(1.2);
+           }
+           p{
+               font-size: 1em;
+           }
+           @include desktop{
+            a.titre{
+                font-size: 1.3em;
+            }
+           }
+        }
+    }
+}

@@ -1,0 +1,104 @@
+.carrousel-2{
+    display: flex;
+    width: 300vw;
+    height: 30vh;
+    transition: transform .5s;
+    flex-wrap: nowrap;
+    
+    .slide__conteneur{
+        width: 50vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            
+        .slide{
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            
+            
+        &:nth-of-type(1){
+            background-color: #F7C5DA; 
+        }
+        &:nth-of-type(2){
+            background-color: #F4AECB;
+        }
+        &:nth-of-type(3){
+            background-color: #F198BD;
+        }
+
+        img{
+            display: block;
+        }
+
+        .slide__info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            p{
+                font-size: .8rem;
+            }
+            a{
+                font-size: 1.5rem;
+                text-decoration: none;
+            }
+
+            
+        }
+        }
+    }
+
+    /*
+    }
+
+    div{
+        display: flex;
+        flex-direction: column;
+            a:hover{
+                opacity: 80%;
+            }
+            img{
+                margin-top: 1em;
+            }
+    }
+    }
+    */
+    /*section boutton pour le carrousel*/
+
+/*.carrouselBoutton{
+        height: 5vh;
+        width: 100vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #EE82AF;
+        @include desktop{
+            height: 8vh;
+            width: 100vw;
+        }
+
+        a{
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            @include desktop{
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+            }
+        }
+
+        a:hover{
+            background-color: rgb(153, 123, 140) ;
+        }
+    }*/
+}

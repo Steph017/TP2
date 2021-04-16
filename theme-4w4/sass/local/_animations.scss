@@ -1,0 +1,34 @@
+/*animation du titre*/
+.site-title{
+
+    animation: anim-title 1.5s both  cubic-bezier(.06,.88,.71,.58)  ;
+    
+}
+
+@keyframes anim-title {
+    0% {transform: translateY(-500px);}
+    100%{transform: translateY(0);}
+}
+
+/*animation du description du site*/
+.site-description{
+    animation: anim-description 1.5s both  cubic-bezier(.06,.88,.71,.58) ;
+}
+
+@keyframes anim-description {
+    0% {transform: translateX(-500px);}
+    100%{transform: translateX(0);}
+}
+
+/*animation sur h1.entry-title*/
+h1.entry-title{
+    animation:anim-entry-title 2s both cubic-bezier(1,.92,0,.91);
+    
+}
+
+@keyframes anim-entry-title {
+    0% {transform: translateX(2000px);}
+    100%{transform: translateX(0);}
+}
+
+

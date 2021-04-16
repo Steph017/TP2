@@ -1,0 +1,74 @@
+.carrousel{
+    display: flex;
+    width: 300vw;
+    height: 20vh;
+    transition: transform .5s;
+
+    div{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    &:nth-of-type(1){
+        background-color: #F7C5DA; 
+    }
+    &:nth-of-type(2){
+        background-color: #F4AECB;
+    }
+    &:nth-of-type(3){
+        background-color: #F198BD;
+    }
+
+
+    }
+
+    div{
+        display: flex;
+        flex-direction: column;
+            a:hover{
+                opacity: 80%;
+            }
+            img{
+                margin-top: 1em;
+            }
+    }
+}
+
+/*section boutton pour le carrousel*/
+.carrouselBoutton{
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EE82AF;
+    @include desktop{
+        height: 8vh;
+        width: 100vw;
+    }
+
+    input{
+        margin: 5px;
+    }
+
+    a{
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        @include desktop{
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+        }
+    }
+
+    a:hover{
+        background-color: rgb(153, 123, 140) ;
+    }
+}

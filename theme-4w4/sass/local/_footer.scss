@@ -1,0 +1,40 @@
+/*-----------------------------------
+css footer mobile
+------------------------------------- */
+footer{
+    
+    background-color: #eba2c0;
+    height: 18vh;
+    width: 95vw;
+    display: flex;
+    .site-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 9.5em;
+        a{
+            border-bottom: black solid 1px;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+        
+    }
+    
+}
+/*-----------------------------------
+css footer desktop
+------------------------------------- */
+@include desktop{
+    footer{
+        height: 10vh;
+        .site-info{
+            flex-direction: row;
+            margin-left: 15em;
+            a{
+               border: none;
+                margin-right: 20em;
+                margin-left: 1.5em;
+            }
+        }
+    }
+}
