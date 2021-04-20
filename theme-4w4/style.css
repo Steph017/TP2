@@ -1982,11 +1982,30 @@ css footer desktop
   color: black;
 }
 
+.galerie .flip-card-front img {
+  border: black 5px double;
+  margin-top: 3rem;
+  height: 20vh;
+  width: 10vw;
+}
+
+.galerie .flip-card-front:hover {
+  opacity: 50%;
+}
+
 .galerie .flip-card-back {
   background-color: #e99dbc;
   color: white;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+}
+
+.galerie .flip-card-back p {
+  margin-top: 8rem;
+}
+
+.galerie .flip-card-back p a {
+  text-decoration: none;
 }
 
 /* Local/page

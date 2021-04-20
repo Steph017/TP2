@@ -37,13 +37,29 @@
       .flip-card-front {
         background-color: rgb(240, 221, 234);
         color: black;
+        img{
+            border: black 5px double;
+            margin-top: 3rem;
+            height: 20vh;
+            width: 10vw;
+        }
       
       }
       
+      .flip-card-front:hover {
+        opacity: 50%;
+      }
+
       .flip-card-back {
         background-color: #e99dbc;
         color: white;
         transform: rotateY(180deg);
+        p{
+            margin-top: 8rem;
+            a{
+                text-decoration: none;
+            }
+        }
         
       }
 
