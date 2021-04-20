@@ -29,26 +29,7 @@ body.home::after {
     }
 }
 
-.site-title{
 
-    font-family: $font_title;
-    font-size: clamp(.9rem, #{"-0.875rem + 5.333vw"}, 3rem);
-    font-weight: bold;
-    margin-bottom: 0;
-    a{
-        text-decoration: none;
-        
-    }
-}
-
-.site-description{
-    font-family: $font_title;
-    font-size: clamp(.8rem, #{"-0.875rem + 8.333vw"}, 1.5rem);
-    font-weight: normal;
-    margin-top: 0;
-    margin-left: 2em;
-    
-}
 
 /*.accueil{
     font-size: clamp(1rem, #{"-0.875rem + 4.333vw"}, 2rem);

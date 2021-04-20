@@ -1,0 +1,38 @@
+.site-title{
+
+    font-family: $font_title;
+    font-size: clamp(.9rem, #{"-0.875rem + 5.333vw"}, 3rem);
+    font-weight: bold;
+    margin-bottom: 0;
+    a{
+        text-decoration: none;
+        
+    }
+}
+
+.site-description{
+    font-family: $font_title;
+    font-size: clamp(.8rem, #{"-0.875rem + 8.333vw"}, 1.5rem);
+    font-weight: normal;
+    margin-top: 0;
+    margin-left: 2em;
+    
+}
+
+
+.page-header{
+    margin-top: 130px;
+
+    .page-title{
+        font-size: 4rem;
+        color: rgb(207, 142, 173);
+    }
+    .archive-description{
+        font-size: 1rem;
+        color: rgb(136, 94, 114);
+
+        p{
+            margin: 0;
+        }
+    }
+}
