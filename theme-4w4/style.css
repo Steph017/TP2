@@ -1978,12 +1978,12 @@ css footer desktop
 }
 
 .galerie .flip-card-front {
-  background-color: #bbb;
+  background-color: #f0ddea;
   color: black;
 }
 
 .galerie .flip-card-back {
-  background-color: #2980b9;
+  background-color: #e99dbc;
   color: white;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
