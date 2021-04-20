@@ -69,22 +69,21 @@ get_header();
 			while ( have_posts() ) :
 				the_post();
                convertir_tableau($tPropriété);
-               if ( $precedent != $tPropriété['typeCours']) : ?>
+               if ( $tPropriété['typeCours'] != $precedent) : ?>
 					<?php if ($precedent != "XXXXXXX"): ?>
 					</section>
-					<?php endif ?>
+					
 					<?php if (in_array($precedent, ['Web', 'Jeu', 'Spécifique'])): ?>
 							<section class="ctrl-carrousel">
 								<?php echo $ctrl_radio; 
 								$ctrl_radio = '';
 								?>
 							</section>
+							<?php endif ?>
 						<?php endif; ?>
 					<h2><?php echo $tPropriété['typeCours'] ?></h2>
 					<!-- code pour aller chercher les categories -->		
 						<section <?php echo (in_array($tPropriété['typeCours'], ['Web', 'Jeu', 'Spécifique']) ? 'class="carrousel-2"' : 'class="bloc"'); ?>>
-
-						
 					<?php endif; ?>
 
 					<!-- modification de la forme des blocs de cours -->
@@ -92,7 +91,7 @@ get_header();
 				<?php
 				if (in_array($tPropriété['typeCours'], ['Web', 'Jeu', 'Spécifique'])): 	
 					get_template_part( 'template-parts/content', 'carrousel' );
-					$ctrl_radio .= '<input type="radio" name="radio">';
+					$ctrl_radio .= '<input class="rad-carrousel"  type="radio" name="rad-'.$tPropriété['typeCours'].'">';
 				else:
 					get_template_part( 'template-parts/content', 'bloc' );
 				endif;
