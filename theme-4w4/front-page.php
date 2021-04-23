@@ -84,7 +84,7 @@ get_header();
 						<?php endif; ?>
 					<h2><?php echo $tPropriété['typeCours'] ?></h2>
 					<!-- code pour aller chercher les categories -->		
-						<section <?php echo (in_array($tPropriété['typeCours'], ['Web', 'Jeu', 'Spécifique']) ? 'class="carrousel-2"' : 'class="bloc"'); ?>>
+						<section <?php echo  class_composant($tPropriété['typeCours']) ?>>
 					<?php endif; ?>
 
 					<!-- modification de la forme des blocs de cours -->
@@ -93,6 +93,8 @@ get_header();
 				if (in_array($tPropriété['typeCours'], ['Web', 'Jeu', 'Spécifique'])): 	
 					get_template_part( 'template-parts/content', 'carrousel' );
 					$ctrl_radio .= '<input class="rad-carrousel"  type="radio" name="rad-'.$tPropriété['typeCours'].'">';
+				elseif ($tPropriété['typeCours'] = 'Projet') :
+					get_template_part( 'template-parts/content', 'galerie' );
 				else:
 					get_template_part( 'template-parts/content', 'bloc' );
 				endif;
@@ -106,7 +108,7 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
+//get_sidebar();
 get_footer();
 
 function convertir_tableau(&$tPropriété){
@@ -120,7 +122,17 @@ function convertir_tableau(&$tPropriété){
 }
 
 
-
+function class_composant($typeCours){
+	if(in_array($typeCours, ['Web', 'Jeu', 'Spécifique'])){
+		return 'class="carrousel-2"';
+	}
+	elseif($typeCours == 'Projet'){
+		return 'class="galerie"';
+	}
+	else{
+		return 'class="bloc"';
+	}
+}
 
 
 /*-------------------------------------------------------------

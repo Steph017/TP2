@@ -1875,19 +1875,7 @@ css pour les blocs de cours
 
 /* Local/footer
 --------------------------------------------- */
-/*-----------------------------------
-css footer mobile
-------------------------------------- */
-footer {
-  background-color: #eba2c0;
-  height: 18vh;
-  width: 95vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-footer .site-info {
+.site-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1895,37 +1883,22 @@ footer .site-info {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 9.5em;
+  background-color: black;
+  color: white;
 }
 
-footer .site-info a {
-  border-bottom: black solid 1px;
-  text-decoration: none;
-  margin-bottom: 10px;
-}
-
-/*-----------------------------------
-css footer desktop
-------------------------------------- */
-@media (min-width: 1200px) {
-  footer {
-    height: 10vh;
-  }
-  footer .site-info {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-left: 15em;
-  }
-  footer .site-info a {
-    border: none;
-    margin-right: 20em;
-    margin-left: 1.5em;
-  }
+.site-footer .ligne-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 /* Local/galerie
