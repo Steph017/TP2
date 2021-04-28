@@ -102,9 +102,15 @@ get_header();
 			
 			endwhile; ?>
 				</section>
-		<?php endif; ?>
-
-
+		
+			<section class="nouvelles">
+				<button id="bouton_nouvelles">
+					Afficher les trois dernieres nouvelles.
+				</button>
+				<section>
+				</section>
+			</section>
+			<?php endif; ?>
 	</main><!-- #main -->
 
 <?php

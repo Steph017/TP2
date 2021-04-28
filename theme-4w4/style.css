@@ -1303,6 +1303,17 @@ css acceuil desktop
   background-color: #EE82AF;
 }
 
+.home .nouvelles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2% 4% 2% 2%;
+}
+
 /* Local/animation
 --------------------------------------------- */
 /*animation du titre*/

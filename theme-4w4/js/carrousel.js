@@ -1,4 +1,4 @@
-(function(){
+/*(function(){
     let bout1 = document.getElementById('un');
     console.log(bout1)
     let bout2 = document.getElementById('deux');
@@ -15,4 +15,4 @@
     bout3.addEventListener('mousedown', function(){
         carrousel.style.transform = "translateX(-200vw)";
     });
-}())
+}())*/
