@@ -2030,4 +2030,11 @@ css pour les blocs de cours
 .page-header .archive-description p {
   margin: 0;
 }
+
+/* Local/formulaire
+--------------------------------------------- */
+.admin-rapide {
+  width: 70%;
+  margin: 2% 4% 2% 3%;
+}
 /*# sourceMappingURL=style.css.map */

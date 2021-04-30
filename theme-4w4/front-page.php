@@ -93,7 +93,7 @@ get_header();
 				if (in_array($tPropriété['typeCours'], ['Web', 'Jeu', 'Spécifique'])): 	
 					get_template_part( 'template-parts/content', 'carrousel' );
 					$ctrl_radio .= '<input class="rad-carrousel"  type="radio" name="rad-'.$tPropriété['typeCours'].'">';
-				elseif ($tPropriété['typeCours'] = 'Projet') :
+				elseif ($tPropriété['typeCours'] == 'Projet') :
 					get_template_part( 'template-parts/content', 'galerie' );
 				else:
 					get_template_part( 'template-parts/content', 'bloc' );
@@ -102,7 +102,15 @@ get_header();
 			
 			endwhile; ?>
 				</section>
-		
+				<?php endif; ?>
+
+				<section class="admin-rapide">
+					<h3>Ajouter un article de catégorie : Nouvelles</h3>
+					<input type="text" name="title" placeholder="Titre">
+					<textarea name="content"></textarea>
+					<button id="bout-rapide">Ajouter une nouvelle</button>
+				</section>
+
 			<section class="nouvelles">
 				<button id="bouton_nouvelles">
 					Afficher les trois dernieres nouvelles.
@@ -110,7 +118,7 @@ get_header();
 				<section>
 				</section>
 			</section>
-			<?php endif; ?>
+			
 	</main><!-- #main -->
 
 <?php
