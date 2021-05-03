@@ -1205,6 +1205,7 @@ h1.entry-title {
 @media (min-width: 1200px) {
   h1.entry-title {
     margin-left: 1.5em;
+    margin-top: 5rem;
   }
 }
 
