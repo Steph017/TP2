@@ -34,7 +34,7 @@ get_header();
 			</section>
 
 			<?php endif; ?>
-		?>
+		
 
 	</main><!-- #main -->
 

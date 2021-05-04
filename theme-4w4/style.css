@@ -671,6 +671,51 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
+.site {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+      grid-template-areas: "header header" "main main" "sidebar sidebar" "footer footer";
+}
+
+@media (min-width: 1200px) {
+  .site {
+    -ms-grid-columns: 80% 20%;
+        grid-template-columns: 80% 20%;
+        grid-template-areas: "header header" "main sidebar" "footer footer";
+  }
+}
+
+.site-header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  height: 25v;
+}
+
+.site-main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+  overflow: hidden;
+  /* Resolves issue with <pre> elements forcing full width. */
+}
+
+.widget-area {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: sidebar;
+  background-color: lightgray;
+}
+
+.site-footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -1895,7 +1940,7 @@ css pour les blocs de cours
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: black;
+  background-color: lightgray;
   color: white;
 }
 
@@ -2014,21 +2059,21 @@ css pour les blocs de cours
   margin-left: 2em;
 }
 
-.page-header {
+.page-header, .entry-header {
   margin-top: 130px;
 }
 
-.page-header .page-title {
+.page-header .page-title, .page-header .entry-title, .entry-header .page-title, .entry-header .entry-title {
   font-size: 4rem;
   color: #cf8ead;
 }
 
-.page-header .archive-description {
+.page-header .archive-description, .entry-header .archive-description {
   font-size: 1rem;
   color: #885e72;
 }
 
-.page-header .archive-description p {
+.page-header .archive-description p, .entry-header .archive-description p {
   margin: 0;
 }
 
@@ -2037,5 +2082,12 @@ css pour les blocs de cours
 .admin-rapide {
   width: 70%;
   margin: 2% 4% 2% 3%;
+}
+
+/* Local/formulaire
+--------------------------------------------- */
+#secondary {
+  padding-left: 10%;
+  padding-top: 10%;
 }
 /*# sourceMappingURL=style.css.map */
