@@ -7,7 +7,7 @@
 {
    let maRequete = new XMLHttpRequest();
    console.log(maRequete)
-   maRequete.open('GET', monObjJS.siteURL + '/wp-json/wp/V2/posts?categories=33');
+   maRequete.open('GET', monObjJS.siteURL + '/wp-json/wp/V2/posts');
    maRequete.onload = function () {
        console.log(maRequete)
        if (maRequete.status >= 200 && maRequete.status < 400) {
@@ -30,16 +30,18 @@
 /*-----------------------------------------------------------------------------
 controle du formulaire d'edition d'article de categorie Nouvelles
 ----------------------------------------------------------------------------- */
-let bout_ajout = document.getElementById('bout-rapide')
+bout_ajout = document.getElementById('bout-rapide')
 bout_ajout.addEventListener('mousedown', function(){
     console.log('ajout')
 
     let monArticle = {
-        "title" : document.querySelector('admin-rapide [name="title"]').value,
-        "content" : document.querySelector('admin-rapide [name="content"]').value,
+        "title" : document.querySelector('.admin-rapid [name="title"]').value,
+        "content" : document.querySelector('.admin-rapid [name="content"]').value,
         "status" : "publish",
         "categories" : [33]
     }
+
+    console.log(JSON.stringify (monArticle))
     let creerArticle = new XMLHttpRequest();
     creerArticle.open("POST", monObjJS.siteURL + '/wp-json/wp/V2/posts')
     creerArticle.setRequestHeader("X-WP-Nonce", monObjJS.nonce)
@@ -48,8 +50,8 @@ bout_ajout.addEventListener('mousedown', function(){
     creerArticle.onreadystatechange = function(){
         if(creerArticle.readyState == 4){
             if (creerArticle.status == 201){
-                document.querySelector('admin-rapide [name="title"]').value = ''
-                document.querySelector('admin-rapide [name="content"]').value = ''
+                document.querySelector('.admin-rapid [name="title"]').value = ''
+                document.querySelector('.admin-rapid [name="content"]').value = ''
             }
             else{
                 alert('erreur vous devez réessayer - status = ' + creerArticle.status)

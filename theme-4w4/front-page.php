@@ -104,7 +104,7 @@ get_header();
 				</section>
 				<?php endif; ?>
 
-				<section class="admin-rapide">
+				<section class="admin-rapid">
 					<h3>Ajouter un article de catégorie : Nouvelles</h3>
 					<input type="text" name="title" placeholder="Titre">
 					<textarea name="content"></textarea>
