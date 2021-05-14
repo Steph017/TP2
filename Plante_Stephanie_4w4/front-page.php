@@ -75,7 +75,7 @@ get_header();
 					<?php if ($precedent != "XXXXXXX"): ?>
 					</section>
 					
-					<?php if (in_array($precedent, ['Web', 'Jeu', 'Spécifique'])): ?>
+					<?php if (in_array($precedent, ['Web', 'Spécifique'])): ?>
 							<section class="ctrl-carrousel">
 								<?php echo $ctrl_radio; 
 								$ctrl_radio = '';
@@ -91,7 +91,7 @@ get_header();
 					<!-- modification de la forme des blocs de cours -->
 							   
 				<?php
-				if (in_array($tPropriété['typeCours'], ['Web', 'Jeu', 'Spécifique'])): 	
+				if (in_array($tPropriété['typeCours'], ['Web', 'Spécifique'])): 	
 					get_template_part( 'template-parts/content', 'carrousel' );
 					$ctrl_radio .= '<input class="rad-carrousel"  type="radio" name="rad-'.$tPropriété['typeCours'].'">';
 				elseif ($tPropriété['typeCours'] == 'Projet') :
@@ -138,7 +138,7 @@ function convertir_tableau(&$tPropriété){
 
 
 function class_composant($typeCours){
-	if(in_array($typeCours, ['Web', 'Jeu', 'Spécifique'])){
+	if(in_array($typeCours, ['Web', 'Spécifique'])){
 		return 'class="carrousel-2"';
 	}
 	elseif($typeCours == 'Projet'){

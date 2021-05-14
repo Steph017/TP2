@@ -3,8 +3,8 @@
     let nouvelles = document.querySelector('.nouvelles section')
     let annonce = document.getElementById('annonce')
     window.addEventListener('load',function(){
-        monAjax(monObjJS.siteURL + '/wp-json/wp/V2/posts?categories=33', nouvelles)
-        monAjax(monObjJS.siteURL + '/wp-json/wp/V2/posts?categories=35', annonce)
+        monAjax(monObjJS.siteURL + '/wp-json/wp/V2/posts?categories=33&per_page=3', nouvelles)
+        monAjax(monObjJS.siteURL + '/wp-json/wp/V2/posts?categories=34&per_page=1', annonce)
     })
     
     function monAjax(requete, elmDom)
@@ -43,7 +43,7 @@ bout_ajout.addEventListener('mousedown', function(){
         "title" : document.querySelector('.admin-rapid [name="title"]').value,
         "content" : document.querySelector('.admin-rapid [name="content"]').value,
         "status" : "publish",
-        "categories" : [35]
+        "categories" : [34]
     }
 
     console.log(JSON.stringify (monArticle))
