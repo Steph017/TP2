@@ -2257,8 +2257,8 @@ css pour les blocs de cours
 .galeriePerso .flip-card {
   margin: 2%;
   background-color: transparent;
-  width: 250px;
-  height: 300px;
+  width: 200px;
+  height: 250px;
   -webkit-perspective: 1000px;
           perspective: 1000px;
 }
@@ -2299,8 +2299,8 @@ css pour les blocs de cours
 .galeriePerso .flip-card-front img {
   border: black 5px double;
   margin-top: 3rem;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
 }
 
 .galeriePerso .flip-card-front:hover {
@@ -2331,7 +2331,76 @@ css pour les blocs de cours
 ---------------------------------------- */
 @media (min-width: 1200px) {
   .galeriePerso {
-    margin-right: 5rem;
+    margin-left: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .galeriePerso .flip-card {
+    margin: 2%;
+    background-color: transparent;
+    width: 250px;
+    height: 300px;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+  }
+  .galeriePerso .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    -webkit-transition: -webkit-transform 0.6s;
+    transition: -webkit-transform 0.6s;
+    transition: transform 0.6s;
+    transition: transform 0.6s, -webkit-transform 0.6s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .galeriePerso .flip-card:hover .flip-card-inner {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  .galeriePerso .flip-card-front, .galeriePerso .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .galeriePerso .flip-card-front {
+    background-color: #e5f7e2;
+    color: black;
+  }
+  .galeriePerso .flip-card-front img {
+    border: black 5px double;
+    margin-top: 3rem;
+    height: 200px;
+    width: 200px;
+  }
+  .galeriePerso .flip-card-front:hover {
+    opacity: 50%;
+  }
+  .galeriePerso .flip-card-back {
+    background-color: #a7bba3;
+    color: white;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  .galeriePerso .flip-card-back p {
+    margin-top: 8rem;
+  }
+  .galeriePerso .flip-card-back p a {
+    text-decoration: none;
+    color: black;
+  }
+  .galeriePerso .flip-card-back p a:hover {
+    color: #eff3ef;
   }
 }
 /*# sourceMappingURL=style.css.map */
