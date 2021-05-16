@@ -6,8 +6,8 @@
     .flip-card {
         margin: 2%;
         background-color: transparent;
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 250px;
         perspective: 1000px;
         
       }
@@ -40,8 +40,8 @@
         img{
             border: black 5px double;
             margin-top: 3rem;
-            height: 20vh;
-            width: 10vw;
+            height: 150px;
+            width: 150px;
         }
       
       }
@@ -58,6 +58,7 @@
             margin-top: 8rem;
             a{
                 text-decoration: none;
+                font-size: .8rem;
             }
         }
         
@@ -65,3 +66,37 @@
 
       
 }
+
+@include desktop{
+    
+  
+    .galerie{
+     
+      
+      .flip-card {
+          
+          width: 300px;
+          height: 300px;
+          
+        }
+        
+          img{
+              
+              height: 200px;
+              width: 200px;
+          }
+        
+        
+        .flip-card-back {
+          
+          p{
+            
+              a{
+                font-size: 1rem;
+              }
+          }
+          
+        }
+  
+     }   
+  }  

@@ -9,48 +9,6 @@
 
 get_header();
 ?>
-
-<!-- Debut du carrousel -->
-
-	<!--	<section class="carrousel-2">
-			<article class="slide__conteneur">
-				<div class="slide">
-					<img src="" alt="">
-					<div class="slide__info">
-						<p>582-4W4 - 90H - WEB</p>
-						<a href="http://localhost/4w4/2020/10/07/582-3w3-creation-de-sites-web-dynamiques-90h/">Création de site web dynamique</a>
-						<p>Session : 4</p>
-					</div>
-				</div>
-			</article>
-			<article class="slide__conteneur">
-				<div class="slide">
-					<img src="" alt="">
-					<div class="slide__info">
-						<p>582-4W4 - 90H - WEB</p>
-						<a href="http://localhost/4w4/2020/10/07/582-3w3-creation-de-sites-web-dynamiques-90h/">Création de site web dynamique</a>
-						<p>Session : 4</p>
-					</div>
-				</div>
-			</article>
-			<article class="slide__conteneur">
-				<div class="slide">
-					<img src="" alt="">
-					<div class="slide__info">
-						<p>582-4W4 - 90H - WEB</p>
-						<a href="http://localhost/4w4/2020/10/07/582-3w3-creation-de-sites-web-dynamiques-90h/">Création de site web dynamique</a>
-						<p>Session : 4</p>
-					</div>
-				</div>
-			</article>
-		</section>
-		<section class="ctrl-carrousel">
-		<input type="radio" name="radio">
-		<input type="radio"  name="radio">
-		<input type="radio" name="radio">
-		</section>-->
-		
-	<!-- fin du carrousel -->
 	<main id="primary" class="site-main">
 
 		<?php if ( have_posts() ) : ?>
