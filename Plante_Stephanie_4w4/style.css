@@ -1353,6 +1353,16 @@ css acceuil desktop
   margin-right: 4.5rem;
 }
 
+.home .admin-rapid input {
+  background-color: #f1c5d4;
+  border: none;
+}
+
+.home .admin-rapid textarea {
+  background-color: #f1c5d4;
+  border: none;
+}
+
 /* Local/animation
 --------------------------------------------- */
 /*animation du titre*/
