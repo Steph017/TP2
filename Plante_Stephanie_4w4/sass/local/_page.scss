@@ -24,7 +24,7 @@
     margin-top: 130px;
 
     .page-title, .entry-title{
-        font-size: 4rem;
+        font-size: 2rem;
         color: rgb(207, 142, 173);
     }
     .archive-description{
@@ -37,4 +37,22 @@
     }
 }
 
+.entry-content{
+    border: 5px double black;
+    margin-right: 2rem;
+}
+
+@include desktop{
+
+    .page-title, .entry-title{
+        font-size: 5rem;
+    }
+    
+    .entry-content{
+        margin-right: 5rem;
+        p{
+            font-size: 1.2rem;
+        }
+    }
+}
 

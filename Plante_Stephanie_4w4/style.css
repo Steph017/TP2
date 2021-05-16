@@ -1446,6 +1446,23 @@ h1.entry-title {
   }
 }
 
+/*animation sur h1.entry-title*/
+.page-header .page-title {
+  -webkit-animation: anim-title 2s both cubic-bezier(1, 0.92, 0, 0.91);
+          animation: anim-title 2s both cubic-bezier(1, 0.92, 0, 0.91);
+}
+
+@keyframes anim-title {
+  0% {
+    -webkit-transform: translateX(2000px);
+            transform: translateX(2000px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 /* Local/caroussel
 --------------------------------------------- */
 .carrousel {
@@ -2064,7 +2081,7 @@ css pour les blocs de cours
 }
 
 .page-header .page-title, .page-header .entry-title, .entry-header .page-title, .entry-header .entry-title {
-  font-size: 4rem;
+  font-size: 2rem;
   color: #cf8ead;
 }
 
@@ -2075,6 +2092,23 @@ css pour les blocs de cours
 
 .page-header .archive-description p, .entry-header .archive-description p {
   margin: 0;
+}
+
+.entry-content {
+  border: 5px double black;
+  margin-right: 2rem;
+}
+
+@media (min-width: 1200px) {
+  .page-title, .entry-title {
+    font-size: 5rem;
+  }
+  .entry-content {
+    margin-right: 5rem;
+  }
+  .entry-content p {
+    font-size: 1.2rem;
+  }
 }
 
 /* Local/formulaire
