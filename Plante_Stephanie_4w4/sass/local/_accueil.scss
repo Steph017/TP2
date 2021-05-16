@@ -72,7 +72,10 @@ Liste des blocs cours par type
                     text-decoration: none;
                     text-align: center;
                 }
+                
             }
+
+            
 /*-----------------------------------
 css acceuil pour tablet
 ------------------------------------- */        
@@ -116,4 +119,10 @@ css acceuil desktop
     margin-top: 20px;
     background-color: rgb(224, 92, 136);
     height: 20vh;
+}
+
+.home .admin-rapid{
+    background-color:rgb(228, 158, 183);
+    border: 5px double black;
+    margin-right: 4.5rem;
 }

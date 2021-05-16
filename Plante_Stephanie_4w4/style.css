@@ -1347,6 +1347,12 @@ css acceuil desktop
   height: 20vh;
 }
 
+.home .admin-rapid {
+  background-color: #e49eb7;
+  border: 5px double black;
+  margin-right: 4.5rem;
+}
+
 /* Local/animation
 --------------------------------------------- */
 /*animation du titre*/
