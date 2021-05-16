@@ -1190,7 +1190,7 @@ menu tablet
 --------------------------------------------- */
 body.home {
   width: 100vw;
-  height: 600vh;
+  height: 400vh;
 }
 
 body.home #primary {
@@ -1223,27 +1223,8 @@ body.home::after {
   }
 }
 
-/*.accueil{
-    font-size: clamp(1rem, -0.875rem + 4.333vw, 2rem);
-    ul{
-        list-style-type: none;
-        padding-left: 0;
-        @include desktop{
-            margin-left: 1.8em;
-        }
-        
-    }
-    img{
-        z-index: -1;
-        @include desktop{
-            border-radius: 25%;
-            border: rgb(196, 139, 223) solid 2px;
-        }
-    }
-}
-*/
 h1.entry-title {
-  margin-left: 0em;
+  margin-left: 10em;
   font-size: clamp(1.5rem, -0.875rem + 4.333vw, 2.5rem);
 }
 
@@ -1615,7 +1596,7 @@ h1.entry-title {
 
 .carrousel-2 .slide__conteneur .slide {
   width: 60%;
-  height: 60%;
+  height: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1650,15 +1631,18 @@ h1.entry-title {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: 1rem;
 }
 
 .carrousel-2 .slide__conteneur .slide .slide__info p {
+  margin-left: 1rem;
   font-size: .8rem;
 }
 
 .carrousel-2 .slide__conteneur .slide .slide__info a {
   font-size: .8rem;
   text-decoration: none;
+  margin-left: .5rem;
 }
 
 .carrousel-2 .slide__conteneur .slide:nth-of-type(1) {
@@ -2070,7 +2054,7 @@ css pour les blocs de cours
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: lightgray;
+  background-color: #f3d6e2;
   color: white;
 }
 
@@ -2234,8 +2218,11 @@ css pour les blocs de cours
 /* Local/formulaire
 --------------------------------------------- */
 #secondary {
+  margin-top: 3rem;
   padding-left: 10%;
   padding-top: 10%;
+  background-color: #F7C5DA;
+  border: double 2px black;
 }
 
 /* Local/GaleriePerso
