@@ -20,13 +20,13 @@ get_header();
 					the_archive_description( '<div class="archive-description">', '</div>' );
 					?>
 				</header><!-- .page-header -->
-				<section class="galerie">
+				<section class="galeriePerso">
 				<?php
 				/* Start the Loop */
 				while ( have_posts() ) :
 					the_post();
 
-					get_template_part( 'template-parts/content', 'galerie' );
+					get_template_part( 'template-parts/content', 'galerie');
 
 				endwhile;?>
 
