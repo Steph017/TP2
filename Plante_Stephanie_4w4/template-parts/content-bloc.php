@@ -10,7 +10,7 @@
  global $tPropriété;
 
 ?>
-
+<!-- affiche des blocs de cours -->
 <article>
 	<p class="icone"><?php echo selectionne_icone($tPropriété['typeCours']);?></p>
     <p><?php echo $tPropriété['sigle'] . "-" . $tPropriété['nbHeure'] . "-" . $tPropriété['typeCours']; ?></p>

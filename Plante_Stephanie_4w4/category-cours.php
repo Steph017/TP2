@@ -7,9 +7,11 @@
  * @package theme-4w4
  */
 
+/*-----------------------------------
+code pour afficher les cours
+------------------------------------- */
 get_header();
 ?>
-//////////////////////////// CATEGORIE COURS
 	<main id="primary" class="site-main">
 
 		<?php if ( have_posts() ) : ?>

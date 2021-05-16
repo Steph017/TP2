@@ -1,3 +1,6 @@
+/*-----------------------------------
+css de la galerie des projets des anciens etudiants - mobile
+------------------------------------- */
 .galerie{
     display: flex;
     flex-wrap: wrap;
@@ -66,7 +69,9 @@
 
       
 }
-
+/*-----------------------------------
+css de la galerie des projets des anciens etudiants - desktop
+------------------------------------- */
 @include desktop{
     
   

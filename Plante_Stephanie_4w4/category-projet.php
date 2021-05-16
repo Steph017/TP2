@@ -6,7 +6,9 @@
  *
  * @package theme-4w4
  */
-
+/*-----------------------------------
+code pour afficher les projets des anciens eleves.
+------------------------------------- */
 get_header();
 ?>
 

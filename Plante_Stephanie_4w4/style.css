@@ -1330,6 +1330,9 @@ css acceuil desktop
   background-color: #EE82AF;
 }
 
+/*-----------------------------------
+css nouvelles
+------------------------------------- */
 .home .nouvelles {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1341,26 +1344,13 @@ css acceuil desktop
   margin: 2% 4% 2% 2%;
 }
 
+/*-----------------------------------
+css annonce
+------------------------------------- */
 #annonce {
   margin-top: 20px;
   background-color: #e05c88;
   height: 20vh;
-}
-
-.home .admin-rapid {
-  background-color: #e49eb7;
-  border: 5px double black;
-  margin-right: 4.5rem;
-}
-
-.home .admin-rapid input {
-  background-color: #f1c5d4;
-  border: none;
-}
-
-.home .admin-rapid textarea {
-  background-color: #f1c5d4;
-  border: none;
 }
 
 /* Local/animation
@@ -1666,6 +1656,9 @@ h1.entry-title {
 
 /* Local/caroussel-2
 --------------------------------------------- */
+/*-----------------------------------
+carrousel des cours en mode mobile
+------------------------------------- */
 .carrousel-2 {
   width: 300vw;
   height: 30vh;
@@ -1785,6 +1778,9 @@ h1.entry-title {
   display: none;
 }
 
+/*-----------------------------------
+carrousel des cours en mode desktop
+------------------------------------- */
 @media (min-width: 1200px) {
   .carrousel-2 {
     width: 300vw;
@@ -2147,6 +2143,9 @@ css pour les blocs de cours
 
 /* Local/footer
 --------------------------------------------- */
+/*-----------------------------------
+css footer
+------------------------------------- */
 .site-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2175,6 +2174,9 @@ css pour les blocs de cours
 
 /* Local/galerie
 --------------------------------------------- */
+/*-----------------------------------
+css de la galerie des projets des anciens etudiants - mobile
+------------------------------------- */
 .galerie {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2254,6 +2256,9 @@ css pour les blocs de cours
   font-size: .8rem;
 }
 
+/*-----------------------------------
+css de la galerie des projets des anciens etudiants - desktop
+------------------------------------- */
 @media (min-width: 1200px) {
   .galerie .flip-card {
     width: 300px;
@@ -2270,6 +2275,9 @@ css pour les blocs de cours
 
 /* Local/page
 --------------------------------------------- */
+/*-----------------------------------
+css des pages - mobile
+------------------------------------- */
 .site-title {
   font-family: "Montserrat", sans-serif;
   font-size: clamp(0.9rem, -0.875rem + 5.333vw, 3rem);
@@ -2307,11 +2315,17 @@ css pour les blocs de cours
   margin: 0;
 }
 
+/*-----------------------------------
+css pour les textes dans les pages.
+------------------------------------- */
 .entry-content {
   border: 5px double black;
   margin-right: 2rem;
 }
 
+/*-----------------------------------
+css des pages - mobile
+------------------------------------- */
 @media (min-width: 1200px) {
   .page-header .page-title, .page-header .entry-title, .entry-header .page-title, .entry-header .entry-title {
     font-size: 4rem;
@@ -2326,13 +2340,32 @@ css pour les blocs de cours
 
 /* Local/formulaire
 --------------------------------------------- */
-.admin-rapide {
+/*-----------------------------------
+css acceuil desktop
+------------------------------------- */
+.home .admin-rapid {
   width: 70%;
   margin: 2% 4% 2% 3%;
+  background-color: #e49eb7;
+  border: 5px double black;
+  margin-right: 4.5rem;
+}
+
+.home .admin-rapid input {
+  background-color: #f1c5d4;
+  border: none;
+}
+
+.home .admin-rapid textarea {
+  background-color: #f1c5d4;
+  border: none;
 }
 
 /* Local/formulaire
 --------------------------------------------- */
+/*-----------------------------------
+css de la sidebar
+------------------------------------- */
 #secondary {
   margin-top: 3rem;
   padding-left: 10%;
@@ -2343,8 +2376,9 @@ css pour les blocs de cours
 
 /* Local/GaleriePerso
 --------------------------------------------- */
-/*------------------------ version mobile 
----------------------------------------- */
+/*-----------------------------------
+css de la galerie des projets des personelles - mobile
+------------------------------------- */
 .galeriePerso {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2428,8 +2462,9 @@ css pour les blocs de cours
   color: #eff3ef;
 }
 
-/*------------------------ version desktop
----------------------------------------- */
+/*-----------------------------------
+css de la galerie des projets des personelles - desktop
+------------------------------------- */
 @media (min-width: 1200px) {
   .galeriePerso {
     margin-right: 5rem;

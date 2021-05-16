@@ -7,6 +7,9 @@
  * @package theme-4w4
  */
 
+/*-----------------------------------
+code pour afficher mes projets persos
+------------------------------------- */
 get_header();
 ?>
 	<main id="primary" class="site-main">

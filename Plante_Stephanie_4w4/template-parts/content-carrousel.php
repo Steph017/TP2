@@ -10,7 +10,7 @@
  global $tPropriété;
 
 ?>
-	
+<!-- affiche des carrousel de l'acceuil-->	
 <article class="slide__conteneur">
 				<div class="slide">
 					<?php the_post_thumbnail('thumbnail'); ?>

@@ -1,3 +1,6 @@
+/*-----------------------------------
+css des pages - mobile
+------------------------------------- */
 .site-title{
 
     font-family: $font_title;
@@ -36,12 +39,16 @@
         }
     }
 }
-
+/*-----------------------------------
+css pour les textes dans les pages.
+------------------------------------- */
 .entry-content{
     border: 5px double black;
     margin-right: 2rem;
 }
-
+/*-----------------------------------
+css des pages - mobile
+------------------------------------- */
 @include desktop{
 
     .page-header, .entry-header{

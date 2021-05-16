@@ -62,7 +62,7 @@ get_header();
 			endwhile; ?>
 				</section>
 				<?php endif; ?>
-
+				<!-- formulaire de nouvelle -->
 				<section class="admin-rapid">
 					<h3>Ajouter un article de catégorie : Nouvelles</h3>
 					<input type="text" name="title" placeholder="Titre">
@@ -84,6 +84,9 @@ get_header();
 //get_sidebar();
 get_footer();
 
+/*-----------------------------------
+convertir les informations
+------------------------------------- */
 function convertir_tableau(&$tPropriété){
 	
 	$titre_grand = get_the_title();
@@ -94,7 +97,9 @@ function convertir_tableau(&$tPropriété){
 	$tPropriété['typeCours'] = get_field('type_de_cours');
 }
 
-
+/*-----------------------------------
+convertir defenir les class
+------------------------------------- */
 function class_composant($typeCours){
 	if(in_array($typeCours, ['Web', 'Jeu', 'Spécifique'])){
 		return 'class="carrousel-2"';

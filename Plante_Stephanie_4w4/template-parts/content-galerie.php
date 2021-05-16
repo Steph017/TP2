@@ -7,7 +7,7 @@
  * @package theme-4w4
  */ 
 ?>
-	
+	<!-- affiche de galerie pour les projets -->
 <article class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">

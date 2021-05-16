@@ -1,5 +1,6 @@
-/*------------------------ version mobile 
----------------------------------------- */
+/*-----------------------------------
+css de la galerie des projets des personelles - mobile
+------------------------------------- */
 .galeriePerso{
     display: flex;
     flex-wrap: wrap;
@@ -73,8 +74,9 @@
 
       
 }
-/*------------------------ version desktop
----------------------------------------- */
+/*-----------------------------------
+css de la galerie des projets des personelles - desktop
+------------------------------------- */
 @include desktop{
     
   .galeriePerso{

@@ -1,3 +1,6 @@
+/*-----------------------------------
+carrousel des cours en mode mobile
+------------------------------------- */
 .carrousel-2 {
     width: 300vw;
     height: 30vh;
@@ -84,7 +87,9 @@
     }
 }
 
-
+/*-----------------------------------
+carrousel des cours en mode desktop
+------------------------------------- */
 @include desktop{
 
     .carrousel-2 {
