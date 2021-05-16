@@ -31,15 +31,17 @@ h1.entry-title{
     100%{transform: translateX(0);}
 }
 
-/*animation sur h1.entry-title*/
-.page-header .page-title{
-    animation:anim-title 2s both cubic-bezier(1,.92,0,.91);
+/*animation sur .entry-content*/
+.entry-content{
+    animation:anim-entry-title 2s both cubic-bezier(1,.92,0,.91);
     
 }
 
-@keyframes anim-title {
+@keyframes anim-entry-title {
     0% {transform: translateX(2000px);}
     100%{transform: translateX(0);}
 }
+
+
 
 

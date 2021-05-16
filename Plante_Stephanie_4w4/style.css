@@ -1446,13 +1446,13 @@ h1.entry-title {
   }
 }
 
-/*animation sur h1.entry-title*/
-.page-header .page-title {
-  -webkit-animation: anim-title 2s both cubic-bezier(1, 0.92, 0, 0.91);
-          animation: anim-title 2s both cubic-bezier(1, 0.92, 0, 0.91);
+/*animation sur .entry-content*/
+.entry-content {
+  -webkit-animation: anim-entry-title 2s both cubic-bezier(1, 0.92, 0, 0.91);
+          animation: anim-entry-title 2s both cubic-bezier(1, 0.92, 0, 0.91);
 }
 
-@keyframes anim-title {
+@keyframes anim-entry-title {
   0% {
     -webkit-transform: translateX(2000px);
             transform: translateX(2000px);
@@ -2100,8 +2100,8 @@ css pour les blocs de cours
 }
 
 @media (min-width: 1200px) {
-  .page-title, .entry-title {
-    font-size: 5rem;
+  .page-header .page-title, .page-header .entry-title, .entry-header .page-title, .entry-header .entry-title {
+    font-size: 4rem;
   }
   .entry-content {
     margin-right: 5rem;

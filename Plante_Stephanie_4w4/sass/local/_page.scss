@@ -44,8 +44,12 @@
 
 @include desktop{
 
-    .page-title, .entry-title{
-        font-size: 5rem;
+    .page-header, .entry-header{
+        
+        .page-title, .entry-title{
+            font-size: 4rem;
+            
+        }
     }
     
     .entry-content{
